@@ -4,7 +4,7 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, F
 const Contact = () => {
   return (
     <div className="p-6">
-      <h2 className="text-3xl font-bold text-blue-600 mb-4">Contact Me</h2>
+      <h2 className="text-3xl font-bold text-gray-400 mb-4">Contact Me</h2>
       
       {/* Contact List */}
       <div className="grid grid-cols-2 gap-6 md:grid-cols-3 mt-10">
