@@ -16,49 +16,57 @@ const Main1250 = () => {
 
   const [ activeSection , setActiveSection ] = useState('about')
   const [showContact, setShowContact] = useState(false);
+  const [loading, setLoading] = useState(true);
 
 
   return (
-    <div className="relative flex flex-col gap-10 bg-[#262626]">
-      <div className='bg-black h-52 flex items-center mx-40 pl-20 gap-8 rounded-2xl'>
-        <img className="h-4/5 border-2 text-gray-500 rounded-full" src={profile}/>
-        <div className="text-gray-500 flex flex-col gap-5">
-          <p>Ketan Kumar</p>
-          <div className="border-2 text-gray-500 rounded-md p-1">Software Developer</div>
-        </div>
-      </div>
+    <>
+      {loading ? (
+        <Preloader onFinish={() => setLoading(false)} />
+      ) : (
+        <div className="relative flex flex-col gap-10 bg-[#262626] pt-3">
+          <div className='bg-black h-52 flex items-center mx-40 pl-20 gap-8 rounded-2xl'>
+            <img className="h-4/5 border-2 text-gray-500 rounded-full" src={profile}/>
+            <div className="text-gray-500 flex flex-col gap-5">
+              <p>Ketan Kumar</p>
+              <div className="border-2 text-gray-500 rounded-md p-1">Software Developer</div>
+            </div>
+          </div>
 
-      <div className="bg-black flex items-center mx-40 pl-20 gap-8 rounded-2xl text-gray-500">
-                    <nav className="border-2 absolute top-62  right-40 flex gap-6 p-4 bg-zinc-500 rounded-bl-2xl rounded-tr-2xl shadow-md">
-                        {["about", "skills", "projects", "contact"].map((section) => (
-                            <button
-                            key={section}
-                            onClick={() => setActiveSection(section)}
-                            className={`text-lg capitalize text-gray-950 hover:cursor-pointer ${
-                                activeSection === section ? "text-gray-900 font-bold" : "text-gray-500"
-                            } hover:text-gray-700`}
+          <div className="bg-black flex items-center mx-40 px-10 gap-8 rounded-2xl text-gray-500">
+                        <nav className="border-2 absolute top-62  right-40 flex gap-6 p-4 bg-zinc-500 rounded-bl-2xl rounded-tr-2xl shadow-md">
+                            {["about", "skills", "projects", "contact"].map((section) => (
+                                <button
+                                key={section}
+                                onClick={() => setActiveSection(section)}
+                                className={`text-lg capitalize text-gray-950 hover:cursor-pointer ${
+                                    activeSection === section ? "text-gray-900 font-bold" : "text-gray-500"
+                                } hover:text-gray-700`}
+                                >
+                                {section}
+                                </button>
+                            ))}
+                            </nav>
+
+
+                            {/* Dynamic Content Based on Active Section */}
+                            <motion.div 
+                                key={activeSection} // Important for animation reset
+                                initial={{ opacity: 0, y: 10 }} // Start with 0 opacity and a slight downward position
+                                animate={{ opacity: 1, y: 0 }} // Smoothly fade in and move to original position
+                                exit={{ opacity: 0, y: -10 }} // Fade out with slight upward motion
+                                transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth timing 
                             >
-                            {section}
-                            </button>
-                        ))}
-                        </nav>
-
-
-                        {/* Dynamic Content Based on Active Section */}
-                        <motion.div 
-                            key={activeSection} // Important for animation reset
-                            initial={{ opacity: 0, y: 10 }} // Start with 0 opacity and a slight downward position
-                            animate={{ opacity: 1, y: 0 }} // Smoothly fade in and move to original position
-                            exit={{ opacity: 0, y: -10 }} // Fade out with slight upward motion
-                            transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth timing 
-                        >
-                        {activeSection === "about" && <About />}
-                        {activeSection === "skills" && <Resume />}
-                        {activeSection === "projects" && <Project />}
-                        {activeSection === "contact" && <Contact />}
-                        </motion.div>
-      </div>        
-    </div>
+                            {activeSection === "about" && <About />}
+                            {activeSection === "skills" && <Resume />}
+                            {activeSection === "projects" && <Project />}
+                            {activeSection === "contact" && <Contact />}
+                            </motion.div>
+          </div>        
+        </div>
+      )}
+    </>
+    
   )
 }
 
