@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaReact, FaNodeJs, FaGithub, FaGit, FaLinux } from "react-icons/fa";
 import { SiRedux, SiRecoil, SiJavascript, SiTypescript, SiNextdotjs, SiTurborepo, SiMongodb, SiPostgresql, SiPrisma, SiExpress, SiGnubash, SiWebrtc } from "react-icons/si";
 
@@ -24,15 +24,30 @@ const skills = [
 ];
 
 const Resume = () => {
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1250);
+
+  // Handle resizing for responsiveness
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 500);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
     <div className='p-6 space-y-6 '>
         <p className='text-xl font-bold text-gray-400'>My skills</p>
 
         <div className="border-4 rounded-2xl w-10 bg-gradient-to-r from-zinc-500 to-black"></div>
  
-        <div className="border-2  h-fit w-full flex flex-wrap p-8 gap-4 rounded-2xl">
+        <div className={`border-2  h-fit w-full flex flex-wrap p-8 gap-4 rounded-2xl`}>
             {skills.map((skill, index) => (
-                <div key={index} className="flex border-2 gap-2 items-center p-4 rounded-lg shadow-md bg-gray-400 text-gray-950 hover:scale-105 transition-transform">
+                <div key={index} className={`flex border-2 gap-2 items-center ${isMobile ? "p-2" : "p-4"} rounded-lg shadow-md bg-gray-400 text-gray-950 hover:scale-105 transition-transform`}>
                 {skill.icon}
                 <p className="text-lg">{skill.name}</p>
                 </div>

@@ -5,6 +5,7 @@ import Main1024 from "./components/Main1024";
 import Main1250 from "./components/Main1250";
 import Main720 from "./components/Main720";
 import Main850 from "./components/Main850";
+import Main500 from "./components/Main500";
 
 function App() {
   const [currentComponent, setCurrentComponent] = useState(getComponent());
@@ -15,7 +16,8 @@ function App() {
     if (width > 1024) return <Main1250 />;
     if (width > 850) return <Main1024 />;
     if (width > 720) return <Main850 />;
-    return <Main720 />;
+    if (width > 500) return <Main720 />
+    return <Main500/>;
   }
 
   useEffect(() => {
