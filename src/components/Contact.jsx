@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1250);
+
+  // Handle resizing for responsiveness
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1250);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+
   return (
     <div className="p-6">
       <h2 className="text-3xl font-bold text-gray-400 mb-4">Contact Me</h2>
       
       {/* Contact List */}
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 mt-10">
+      <div className={`grid  ${isMobile ? "grid-cols-2" : "grid-cols-3"} gap-6  mt-10`}>
         {/* WhatsApp */}
         <a 
           href="https://wa.me/9717944019" 

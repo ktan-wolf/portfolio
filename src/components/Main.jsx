@@ -81,7 +81,7 @@ const Main = () => {
                         {activeSection === "projects" && <Project />}
                         {activeSection === "contact" && <Contact />}
                         </motion.div>
-                </aside>
+                    </aside>
             </main>
         )}
     </>

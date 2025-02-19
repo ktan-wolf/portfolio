@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaEye, FaGithub } from 'react-icons/fa';
 import project from "../assets/project.png"
 
@@ -24,6 +24,21 @@ const projects = [
 ];
 
 const Project = () => {
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1250);
+
+  // Handle resizing for responsiveness
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1250);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
     <div className='p-6 space-y-6 '>
          <p className='text-xl font-bold text-gray-400'>Projects</p>
@@ -32,7 +47,7 @@ const Project = () => {
 
          {/* Projects Section */}
         <section className="mb-6">
-            <div className="grid grid-cols-3 gap-6">
+            <div className={`grid  ${isMobile ? "grid-cols-2" : "grid-cols-3"} gap-6`}>
             {projects.map((project, index) => (
                 <div key={index} className="relative group overflow-hidden border rounded-lg shadow-lg">
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" />

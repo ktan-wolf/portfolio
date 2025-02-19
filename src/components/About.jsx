@@ -1,10 +1,23 @@
-import React from "react";
-import { CiSquareAlert } from "react-icons/ci";
+import React, { useEffect, useState } from "react";
 import web from "../assets/web-dev.svg";
 import design from "../assets/design-dev.svg";
 
-
 const About = () => {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  // Handle resizing for responsiveness
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1250);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+
   return (
     <section className="p-6 space-y-6 h-fit">
       {/* Heading */}
@@ -32,7 +45,7 @@ const About = () => {
       </p>
 
       <h1 className="text-3xl font-bold text-gray-400">what i'm doing</h1>
-      <section className="grid grid-cols-2 grid-rows- gap-2">
+      <section className={`grid  ${isMobile ? "grid-cols-1" : "grid-cols-2"} grid-rows- gap-2`}>
         <div className="h-full w-full border-2 p-6 rounded-2xl">
             <div className="flex gap-4">
                 <img className="text-6xl" src={web}/>
