@@ -59,7 +59,7 @@ const Project = () => {
                     <FaGithub />
                     </a>
                 </div>
-                <h4 className="text-center text-lg font-semibold p-2 bg-gray-500 text-gray-900">{project.title}</h4>
+                <h4 className="text-center text-lg font-semibold p-2 bg-gray-500 text-gray-900">{project.title}</h4> 
                 </div>
             ))}
             </div>
