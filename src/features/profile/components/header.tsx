@@ -3,9 +3,9 @@ import { SimpleTooltip } from "@/components/ui/tooltip";
 import { FlipSentences } from "@/registry/flip-sentences";
 
 import { USER } from "../data/user";
+import { IconVerified } from "./icon-verified";
 import { KtanAvatar } from "./ktan-avatar";
 import { KtanCoverHello } from "./ktan-cover-hello";
-import { IconVerified } from "./icon-verified";
 import { Nav } from "./nav/nav";
 import { NavDropdown } from "./nav/nav-dropdown";
 import { NavItemGitHub } from "./nav/nav-item-github";

@@ -1,5 +1,5 @@
-import React from "react"; // Explicitly importing React to ensure JSX support
 import dayjs from "dayjs";
+import React from "react"; // Explicitly importing React to ensure JSX support
 import { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { USER } from "@/features/profile/data/user";

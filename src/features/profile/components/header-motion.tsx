@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 import { USER } from "../data/user";
-import { KtanAvatar } from "./ktan-avatar";
 import { IconVerified } from "./icon-verified";
+import { KtanAvatar } from "./ktan-avatar";
 import { NavDropdown } from "./nav/nav-dropdown";
 import { NavScrollspy } from "./nav/nav-scrollspy";
 
