@@ -143,7 +143,7 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Tools", "Scripting"]
   },
   {
-    key: "webSocket",
+    key: "websocket",
     title: "WebSocket",
     href: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
     categories: ["Networking", "Real-time"]
