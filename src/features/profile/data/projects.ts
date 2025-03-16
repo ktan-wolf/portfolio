@@ -18,8 +18,8 @@ export const PROJECTS: Project[] = [
     id: "portfolio-website",
     title: "Portfolio Website",
     time: "02.2025 - present",
-    link: "https://github.com/ncdai/chanhdai.com",
-    github: "",
+    link: "https://ktan-portfolio.vercel.app/",
+    github: "https://github.com/ktan-wolf/portfolio",
     tags: [
       "Open Source",
       "Next.js 15",

@@ -4,7 +4,7 @@ this is my portfolio website, showcasing my work as a Software Developer & UI/UX
 
 This is a continuously evolving side project where I experiment with new technologies and keep it updated with the latest advancements in web development.
 
-Check out the live site: [chanhdai.com](https://)
+Check out the live site: [ketan-portfolio](https://ktan-portfolio.vercel.app/)
 
 ## Core Features & Technologies
 

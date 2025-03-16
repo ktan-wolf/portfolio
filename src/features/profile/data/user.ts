@@ -13,7 +13,7 @@ export const USER = {
   address: "New Delhi , India",
   phoneNumber: "+919717944019", // E.164 format
   email: "ktan247610@gmail.com",
-  website: "https://ketanchaudhary.com",
+  website: "https://ktan-portfolio.vercel.app/",
   otherWebsites: [
    
   ],
