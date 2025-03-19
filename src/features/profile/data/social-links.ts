@@ -18,5 +18,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     title: "GitHub",
     description: "ktan-wolf",
     href: "https://github.com/ktan-wolf",
+  },
+  {
+    icon: "/images/link-icons/Resume.png",
+    title: "Resume",
+    description: "ktan-wolf",
+    href: "https://drive.google.com/file/d/1c8s3SZ1fsLoje82ymtjE0gcXjUAa9l-h/view?usp=sharing",
   }
 ];
