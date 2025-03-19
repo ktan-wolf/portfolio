@@ -25,7 +25,7 @@ export const USER = {
   about: `
 Hello, World! I am Ketan Chaudhary, a Fullstack Web Developer & UI/UX Designer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.\n
 With over 2 years of experience in web development, I specialize in building high-quality web applications using Next.js, React, TypeScript, and modern front-end technologies.\n
-Outside of my full-time work, I enjoy exploring new technologies and turning ideas into reality through personal projects.\n
+Outside of my full-time college, I enjoy exploring new technologies and turning ideas into reality through personal projects.\n
 Feel free to reach out if you're interested in collaborating!
   `,
   avatar: "/images/avatar.jpg",
