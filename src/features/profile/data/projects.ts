@@ -2,19 +2,6 @@ import { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "yap",
-    title: "YAP",
-    time: "01.2025 - present",
-    link: "https://yap-five.vercel.app/",
-    github: "https://github.com/ktan-wolf/YAP",
-    tags: [
-      "Company Project",
-      "React ts",
-      "Tailwindcss",
-    ],
-    description: "social media app"
-  },
-  {
     id: "portfolio-website",
     title: "Portfolio Website",
     time: "02.2025 - present",
@@ -31,6 +18,19 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "ketan.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.\n- Elegant & Minimalistic UI: Clean and modern design\n- Dark Mode: Supports light and dark themes for a better user experience\n- SEO Optimization: JSON-LD schema, sitemap, robots\n- Email Protection: Obfuscation to prevent spam\n- [Next.js 15](https://nextjs.org/): Latest React framework for optimized performance and scalability\n- [Tailwind CSS v4](https://tailwindcss.com/): Modern utility-first CSS framework for styling\n\nBlog Features:\n- MDX & Markdown support\n- Dynamic OG Images for rich previews",
+  },
+  {
+    id: "yap",
+    title: "YAP",
+    time: "01.2025 - present",
+    link: "https://yap-five.vercel.app/",
+    github: "https://github.com/ktan-wolf/YAP",
+    tags: [
+      "Company Project",
+      "React ts",
+      "Tailwindcss",
+    ],
+    description: "social media app"
   },
   {
     id: "drawing app",
