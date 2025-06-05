@@ -11,7 +11,7 @@ import {
 
 export function CollapsibleList<T>({
   items,
-  max = 3,
+  max = 4,
 
   keyExtractor,
   renderItem,

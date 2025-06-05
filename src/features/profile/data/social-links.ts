@@ -23,6 +23,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "/images/link-icons/Resume.png",
     title: "Resume",
     description: "ktan-wolf",
-    href: "https://drive.google.com/file/d/1JTJdwRDP3n8vn8HFv8gc5w40InM5PxKB/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1KhR81gU7S9_gF_K8CBGuqL3NX-gtHw7z/view?usp=sharing",
   }
 ];
