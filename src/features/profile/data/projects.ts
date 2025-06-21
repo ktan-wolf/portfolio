@@ -2,24 +2,6 @@ import { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "portfolio-website",
-    title: "Portfolio Website",
-    time: "02.2025 - present",
-    link: "https://ktan-portfolio.vercel.app/",
-    github: "https://github.com/ktan-wolf/portfolio",
-    tags: [
-      "Open Source",
-      "Next.js 15",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Motion",
-      "shadcn/ui",
-      "Vercel",
-    ],
-    description:
-      "ketan.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.\n- Elegant & Minimalistic UI: Clean and modern design",
-  },
-  {
     id: "yap",
     title: "YAP",
     time: "01.2025 - present",
