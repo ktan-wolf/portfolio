@@ -11,7 +11,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "/images/link-icons/linkedin-icon.png",
     title: "LinkedIn",
     description: "ktan-wolf",
-    href: "https://www.linkedin.com/in/ketan-chaudhary-7b203b352/",
+    href: "https://www.linkedin.com/in/ketan-kumar-7b203b352/",
   },
   {
     icon: "/images/link-icons/github-icon.png",
