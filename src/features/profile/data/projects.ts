@@ -2,6 +2,22 @@ import { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
+    id: "aethernet depin",
+    title: "AetherNet DePin",
+    time: "08.2025 - present",
+    link: "https://aethernet-depin.vercel.app/",
+    github: "https://github.com/ktan-wolf/AetherNet-DePIN",
+    tags: [
+      "Solana/Rust",
+      "Anchor",
+      "DeFi",
+      "Next.js",
+      "PostgreSQL",
+      "Docker"
+    ],
+    description: "AetherNet is a decentralized physical infrastructure network (DePIN) project built on the Solana blockchain. \n- On-Chain Node Registry: Users can register and deregister their physical devices on the Solana blockchain. \n- SPL Token Staking: Node registration requires staking a specific SPL token, which is returned upon deregistration. \n- Full User Lifecycle: Complete flow for users to register, view their registered node, and deregister."
+  },
+  {
     id: "yap",
     title: "YAP",
     time: "01.2025 - present",
