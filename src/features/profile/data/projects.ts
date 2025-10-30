@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
       "Tailwindcss",
       "MERN stack"
     ],
-    description: "social media app"
+    description: "social media app \n- Post creation with text and image uploads. \n- Like, unlike, and comment on posts. \n- Real-time notifications for likes, comments, and follows. \n- Delete own posts only (with authorization check)."
   },
   {
     id: "walletApp",
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
       "Open Source",
     ],
     description: 
-      "A fully functional mini command-line shell written in Rust, featuring support for: Command execution ,Directory navigation (cd), Output redirection (>), Piping between commands (|) ,Built-in exit command to gracefully quit"
+      "A fully functional mini command-line shell written in Rust, featuring support for: \n- Command execution \n- Directory navigation (cd) \n- Output redirection (>) \n- Piping between commands (|) \n- Built-in exit command to gracefully quit"
   },
   {
     id: "studyNotion",
@@ -84,6 +84,6 @@ export const PROJECTS: Project[] = [
       "React"
     ],
     description:
-      "Note saving app.\nlet you create read update and delete the notes",
+      "Note saving app.\n- let you create read update and delete the notes",
   },
 ];
