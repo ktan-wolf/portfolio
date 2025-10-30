@@ -48,15 +48,17 @@ export const PROJECTS: Project[] = [
       "Wallet App , let the user transfer the money from banks.\n- Transfer the money between peer users.",
   },
   {
-    id: "drawing app",
-    title: "Drawing App",
-    time: "01.2025 - present",
-    link: "https://drawing-app-swart-eight.vercel.app/",
-    github: "https://github.com/ktan-wolf/Drawing-app",
+    id: "rust cli terminal",
+    title: "Rust CLI Terminal",
+    time: "08.2025 - present",
+    link: "https://github.com/ktan-wolf/Rust-Terminal",
+    github: "https://github.com/ktan-wolf/Rust-Terminal",
     tags: [
-      "Pet Project",
+      "Rust CLI tool for shell",
       "Open Source",
     ],
+    description: 
+      "A fully functional mini command-line shell written in Rust, featuring support for: Command execution ,Directory navigation (cd), Output redirection (>), Piping between commands (|) ,Built-in exit command to gracefully quit"
   },
   {
     id: "studyNotion",

@@ -2,6 +2,30 @@ import { TechStack } from "../types/tech-stack";
 
 export const TECH_STACK: TechStack[] = [
   {
+    key: "solana",
+    title: "Solana",
+    href: "https://solana.com/",
+    categories: ["Blockchain"],
+  },
+  {
+    key: "rust",
+    title: "Rust",
+    href: "https://www.rust-lang.org/",
+    categories: ["Language"],
+  },
+  {
+    key: "pinocchio",
+    title: "Pinocchio",
+    href: "https://learn.blueshift.gg/en/challenges/pinocchio-escrow",
+    categories: ["Solana", "Smart Contract"],
+  },
+  {
+    key: "anchor",
+    title: "Anchor",
+    href: "https://www.anchor-lang.com/",
+    categories: ["Solana", "Framework"],
+  },
+  {
     key: "typescript",
     title: "TypeScript",
     href: "https://www.typescriptlang.org/",
@@ -43,26 +67,6 @@ export const TECH_STACK: TechStack[] = [
     title: "Tailwind CSS",
     href: "https://tailwindcss.com/",
     categories: ["Framework"],
-  },
-  {
-    key: "shadcn-ui",
-    title: "shadcn/ui",
-    href: "https://ui.shadcn.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
-  },
-  {
-    key: "radixui",
-    title: "Radix UI",
-    href: "https://www.radix-ui.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
-  },
-  {
-    key: "motion",
-    title: "Motion",
-    href: "https://motion.dev/",
-    categories: ["Library", "Animation"],
   },
   {
     key: "redux",
@@ -117,12 +121,6 @@ export const TECH_STACK: TechStack[] = [
     title: "Redis",
     href: "https://redis.io/",
     categories: ["Database"],
-  },
-  {
-    key: "figma",
-    title: "Figma",
-    href: "https://www.figma.com/",
-    categories: ["Tools", "Design"],
   },
   {
     key: "express.js",

@@ -7,8 +7,8 @@ export const USER = {
   bio: "Creating with code, driven by passion.",
   flipSentences: [
     "Software Developer",
+    "Web3 Blockchain Developer",
     "Full Stack Developer",
-    "UI/UX Designer",
     "Open Source Contributor",
   ],
   address: "New Delhi , India",
@@ -19,12 +19,12 @@ export const USER = {
    
   ],
   dateOfBirth: "2001-11-06", // YYYY-MM-DD
-  jobTitle: "Software Developer , Full Stack Developer & UI/UX Designer",
+  jobTitle: "Software Developer ,Web3 Blockchain Developer & Full Stack Developer",
   jobs: [
     
   ],
   about: `
-Hello, World! I am Ketan Kumar, a Software Engineer , Full Stack Developer & UI/UX Designer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.\n
+Hello, World! I’m Ketan Kumar, a Software Engineer and Web3 Full Stack Developer passionate about building high-performance, user-centric software solutions. I focus on creating robust, scalable, and efficient applications that solve real-world problems.\n
 With over 2 years of experience in web development, I specialize in building high-quality web applications using Next.js, React, TypeScript, and modern front-end technologies.\n
 Outside of my full-time college, I enjoy exploring new technologies and turning ideas into reality through personal projects.\n
 Feel free to reach out if you're interested in collaborating!
