@@ -2,6 +2,21 @@ import { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
+    id: "web3terminal",
+    title: "Web3Terminal",
+    time: "11.2025 - present",
+    link: "https://w3terminal.vercel.app/",
+    github: "https://github.com/ktan-wolf/W3Terminal_server",
+    tags: [
+      "Solana",
+      "Rust",
+      "WebSockets",
+      "Next.js",
+      "Axum",
+    ],
+    description: "W3:Terminal Engine is a high-frequency, quantum-styled cryptocurrency arbitrage terminal. \n- Multi-Exchange Arbitrage Engine: Engineered a multi-threaded Rust backend (using Tokio and Axum) that concurrently ingests WebSocket streams from CEXs (Binance) and DEXs (Jupiter/Raydium) to identify price discrepancies in real-time. \n- Reactive Terminal Interface: A high-performance Next.js frontend designed to render high-frequency market updates without UI freezing, utilizing optimistic updates for a seamless institutional- grade trading experience. \n- Hybrid Data Normalization: Implemented an efficient adapter layer that normalizes disparate off-chain API data and on-chain RPC responses into a unified format, enabling instant comparison of asset prices across ecosystems."
+  },
+  {
     id: "aethernet depin",
     title: "AetherNet DePin",
     time: "08.2025 - present",
@@ -57,7 +72,7 @@ export const PROJECTS: Project[] = [
       "Rust CLI tool for shell",
       "Open Source",
     ],
-    description: 
+    description:
       "A fully functional mini command-line shell written in Rust, featuring support for: \n- Command execution \n- Directory navigation (cd) \n- Output redirection (>) \n- Piping between commands (|) \n- Built-in exit command to gracefully quit"
   },
   {
